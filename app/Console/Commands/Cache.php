@@ -38,36 +38,6 @@ class Cache extends Command
      */
     public function handle()
     {
-//        $this->clearCache();
-//        $this->clearConfig();
-//        $this->clearRoute();
-//        $this->clearView();
-//        $this->clearCompiled();
-//        $this->clearLogs();
-//        $this->clearSessions();
-//        $this->clearAll();
-
-
-        //  clear                  Flush the application cache
-        //  app:clear              Flush the application cache
-        //  view:clear            Flush the application cache
-        // view:cache           Compile all of the application's Blade templates
-        // Route:cache          Create a route cache file for faster route registration
-        // Route:clear          Remove the route cache file
-        // config:cache        Create a cache file for faster configuration loading
-        // config:clear        Remove the configuration cache file
-        // cache:clear         Flush the application cache
-        // cache:forget        Remove an item from the cache
-        // cache:prune-stale-tags  Prune stale cache tags from the cache (Redis only)
-        // cache:table         Create a migration for the cache database table
-        // auth:clear-resets   Flush expired password reset tokens
-        // event:cache         Discover and cache the application's events and listeners
-        // event:clear         Clear all cached events and listeners
-        // optimize:clear      Remove the cached bootstrap files
-        // queue:clear         Delete all of the jobs from the specified queue
-
-
-
         $caches = multiselect(
             label: 'Select caches to clear:',
             options: [
